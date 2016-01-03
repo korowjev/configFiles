@@ -17,6 +17,12 @@
 (add-hook 'c++-mode-hook (lambda () (interactive)
 			   (setq c-basic-offset 4)))
 
+(add-hook 'julia-mode-hook (lambda () (interactive) (column-marker-3 80)))
+
+(add-hook 'julia-mode-hook (lambda () (interactive) (whitespace-mode t)))
+
+(global-linum-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
