@@ -1,12 +1,8 @@
-(add-to-list 'load-path "/home/cristian/rust/rust-mode")
-(autoload 'rust-mode "rust-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
-
-(add-to-list 'load-path "/home/cristian/julia/contrib")
-(require 'julia-mode)
-
 (add-to-list 'load-path "/home/cristian/.emacs.d/lisp")
 (require 'column-marker)
+(autoload 'rust-mode "rust-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+(require 'julia-mode)
 
 (add-hook 'c++-mode-hook (lambda () (interactive) (column-marker-3 80)))
 
